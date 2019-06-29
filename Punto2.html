@@ -4,40 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Punto2</title>
 
     <style>
-    
-    body{
-        font-size: 2rem;
-        font-family: sans-serif;
-        font-weight: bold;
-        color: blue;
-    }
-    #header{
-        width: 100%;
-        height: 10rem;
-        border: 5px solid violet;
-    }
-    #header td{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #section{
-        width: 100;
-        margin-top: 0.5em;
-    }
-    #section tr{
-        
-    }
-    
+     body{
+           font-size: 2rem;
+           font-weight: bold;
+           color: blue;
+        }
+       #Header{
+           width: 100%;
+           height: 10rem;
+           border: 5px solid violet;
+       }
+       #Header td{
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #Section{
+           width: 100%;
+           margin-top: 0.5em;
+       }
+       #Section tr{
+        display: inline-block;
+        height: 30rem;
+        padding: 7em 0 0 2em;;
+       }
+       #Section #Left{
+           width: 19%;
+           box-sizing: border-box;
+           margin-right: 10px;
+           border: 5px solid blue;
+       }
+       #Section #Content{
+           width: 60%;
+           box-sizing: border-box;
+           margin-right: 10px;
+           border: 5px solid red;
+           padding-left: 9em;
+       }
+       #Section #Right{
+           box-sizing: border-box;
+           width: 19%;
+           border: 5px solid yellow;
+       }
+       #Footer{
+           margin-top: 0.5em;
+           width: 100%;
+           border: 5px solid green;
+       }
+       #Footer td{
+           height: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }    
     </style>
 </head>
+
 <body>
-    
-    <table id="header">
+    <table id="Header">
         <tr>
             <td>
                 Header
@@ -45,29 +73,28 @@
         </tr>
     </table>
     <table id="Section">
-        <tr id="left">
+        <tr id="Left">
             <td>
                 Sidebar left
             </td>
         </tr>
-        <tr id="content">
+        <tr id="Content">
             <td>
                 Content
             </td>
         </tr>
-        <tr id="right">
+        <tr id="Right">
             <td>
                 Sidebar right
             </td>
         </tr>
     </table>
-    <table id="footer">
+    <table id="Footer">
         <tr>
             <td>
                 Footer
             </td>
         </tr>
     </table>
-
 </body>
 </html>
